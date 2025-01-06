@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="./assests/logo.png" alt="logo">
+    </header>
+  <main>
+    <a href=""><img src="./assests/arrow-left-02-stroke-rounded.svg" alt="back">Voltar</a>
+    <h2>Compras da semana</h2>
+      <form id="add-item-form">
+        <input type="text" id="item-input" placeholder="Adicione um novo item" required>
+        <button type="submit">Adicionar Item</button>
+      </form>
+      <ul id="shopping-list"></ul>
+    </main>
+    <footer id="notification" class="hidden"> <img src="./assests/alert-circle-stroke-rounded.svg" alt="alert">O item foi removido da lista <button><img src="./assests/cancel-01-stroke-rounded.svg" alt="cancel"></button>></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
