@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: #F4F5FB;
 }
 
 .container {
@@ -12,6 +12,7 @@ body {
 }
 
 header {
+  margin-bottom: 48px;
   text-align: center;
 }
 
@@ -34,9 +35,13 @@ form {
 form input {
   flex: 1;
   padding: 12px 15px;
-  border: 1px solid #ccc; /* Borda padrão (default) */
-  border-radius: 8px;
+  border: 1px solid #D1D5DB; 
+  border-radius: 12px;
   font-size: 16px;
+}
+
+form input:hover{
+  border-color: #B9C2D0;
 }
 
 form input:focus {
@@ -45,11 +50,20 @@ form input:focus {
 }
 
 form button {
-  padding: 12px;
+  width: 160px;
+  height: 44px;
   background-color: #ca3884;
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 20px;
   cursor: pointer;
+  transition: 0.4s;
+  font-family: 'Inter', sans-serif;
+}
+
+form button:hover {
+  background-color: #A52C6B;
 }
 
