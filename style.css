@@ -22,12 +22,11 @@ header {
 
 .back-link {
   text-decoration: none;
-  color: #CA3884;
-  font-size: 16px; 
+  color: #ca3884;
+  font-size: 16px;
   font-weight: 500;
-  display: flex; 
-  align-items: center; 
- 
+  display: flex;
+  align-items: center;
 }
 
 main h2 {
@@ -78,3 +77,64 @@ form button {
 form button:hover {
   background-color: #a52c6b;
 }
+
+#shopping-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#shopping-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+#shopping-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #374151;
+}
+
+#shopping-list input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #D1D5DB;
+  border-radius: 40%;
+  cursor: pointer;
+}
+
+#shopping-list input[type="checkbox"]:hover{
+  border-color: #B9C2D0;
+}
+
+li input[type="checkbox"]:checked {
+  background-color: #CA3884;
+  border-color: #CA3884; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: #ffffff;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+}
+
+#shopping-list button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+

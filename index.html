@@ -19,7 +19,7 @@
     <main>
       <div class="back-container"> 
         <a href="#" class="back-link">
-          <span class="arrow"><-Voltar</span>
+          <span class="arrow"><- Voltar</span>
         </a>
       </div>
       <h2>Compras da semana</h2>
@@ -27,7 +27,17 @@
         <input type="text" id="item-input" placeholder="Adicione um novo item" required>
         <button type="submit">Adicionar item</button>
       </form>
-      <ul id="shopping-list"></ul>
+      <ul id="shopping-list">
+        <li>
+          <label>
+            <input type="checkbox">
+            <span>Pão de Forma</span>
+          </label>
+          <button class="delete-btn">
+            <img src="./assests/delete-02-stroke-rounded.svg" alt="Excluir">
+          </button>
+        </li>
+      </ul>
     </main>
     <footer id="notification" class="hidden"> <img src="./assests/alert-circle-stroke-rounded.svg" alt="alert">O item foi removido da lista <button class="close-btn"><img src="./assests/cancel-01-stroke-rounded.svg" alt="cancel"></button></footer>
   </div>
