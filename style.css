@@ -166,3 +166,37 @@ footer#notification img {
   cursor: pointer;
   margin-left: 8px; 
 }
+
+@media (max-width: 768px) {
+  header{
+    display: none;
+  }
+  .container {
+    padding: 10px;
+  }
+
+  #add-item-form {
+    flex-direction: column;
+    align-items: stretch;  
+  }
+
+  #add-item-form input[type="text"]{
+    flex: 1;
+  }
+
+  #add-item-form input[type="text"],
+  #add-item-form button {
+    width: 100%;
+
+  }
+
+  #shopping-list li {
+    flex-direction: row;
+    padding: 15px;
+  }
+
+  #notification {
+    flex-direction: row;
+    padding: 15px;
+  }
+}
