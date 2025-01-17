@@ -136,6 +136,10 @@ li input[type="checkbox"]:checked::after {
   cursor: pointer;
 }
 
+.hidden {
+  display: none !important;
+}
+
 footer#notification {
   display: flex;
   align-items: center;
